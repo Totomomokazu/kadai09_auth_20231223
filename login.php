@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- <button><a href="select.php">データベースを確認する</a></button> -->
-    <form method="post" action="account_insert.php">
+    <form method="post" action="login_act.php">
         <fieldset>
             <legend>ログイン画面</legend>
             <!-- <label>氏名：<input type="text" name="user_name"></label><br> -->

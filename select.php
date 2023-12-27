@@ -1,4 +1,9 @@
 <?php
+// 0. SESSION開始！！
+session_start();
+
+
+
 // 0.関数の用意
 require_once("funcs.php");
 
@@ -60,6 +65,7 @@ if ($status==false) {
 </head>
 <body>
     <button><a href="index.php">入力画面を確認する</a></button>
+    <a class="navbar-brand" href="logout.php">ログアウト</a>
     <!-- データ表示エリア -->
     <div>
         <div class="container jumbotron"><?= $view ?></div>
