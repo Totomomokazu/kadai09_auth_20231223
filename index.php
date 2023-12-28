@@ -1,3 +1,16 @@
+<?php
+// session開始
+session_start();
+
+// funcsファイルの読み込み
+require_once("funcs.php");
+
+// ログインチェック
+login_check();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +26,7 @@
             <label>本の名前：<input type="text" name="name"></label><br>
             <label>紹介用リンク：<input type="text" name="url"></label><br>
             <label><textarea name="comment" id="" cols="30" rows="10"></textarea></label><br>
-            <input type="submit" value="送信">
+            <input type="submit" value="登録">
         </fieldset>
     </form>    
 </body>

@@ -5,16 +5,22 @@ session_start();
 
 
 // ログインチェックの機構を入れる
-if ( !isset($_SESSION["chk_ssid"]) || $_SESSION["chk_ssid"] !==session_id() ) {
-    exit("LOGIN ERROR");
-} else{
-    session_regenerate_id(true);
-    $_SESSION["chk_ssid"]=session_id();
-}
+// if ( !isset($_SESSION["chk_ssid"]) || $_SESSION["chk_ssid"] !==session_id() ) {
+//     exit("LOGIN ERROR");
+// } else{
+//     session_regenerate_id(true);
+//     $_SESSION["chk_ssid"]=session_id();
+// }
 
 
 // 0.関数の用意
 require_once("funcs.php");
+// 関数でログインチェックを実施
+login_check();
+
+
+// 0.関数の用意
+// require_once("funcs.php");
 
 // 1.DB接続は関数化出来る
 $pdo=db_conn();

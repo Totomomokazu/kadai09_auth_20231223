@@ -2,12 +2,21 @@
 
 <!-- ここから下はphpの処理 -->
 <?php
+// 0. SESSION開始！！
+session_start();
+
+
+require_once("funcs.php");
+// 関数でログインチェックを実施
+login_check();
+
+
 // １．パラメータの取得。今回はIDだけで良い
 $id=$_GET["id"];
 
 
 // ２．DBに接続
-require_once("funcs.php");
+// require_once("funcs.php");
 $pdo = db_conn();
 
 

@@ -15,3 +15,13 @@ function h($str){
       return exit('DBConnectError:'.$e->getMessage());
     }
   }
+
+  // session_idの有無を確認し、ログイン状態か否かを判別する
+  function login_check(){
+      if ( !isset($_SESSION["chk_ssid"]) || $_SESSION["chk_ssid"] !==session_id() ) {
+        return exit("LOGIN ERROR");
+      } else{
+        session_regenerate_id(true);
+        return $_SESSION["chk_ssid"]=session_id();
+      }
+  }
