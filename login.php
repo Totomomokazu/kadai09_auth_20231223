@@ -7,6 +7,7 @@
 </head>
 <body>
     <!-- <button><a href="select.php">データベースを確認する</a></button> -->
+    <button><a href="account_create.php">アカウントを作成する</a></button>
     <form method="post" action="login_act.php">
         <fieldset>
             <legend>ログイン画面</legend>
