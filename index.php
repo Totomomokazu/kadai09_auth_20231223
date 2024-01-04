@@ -19,6 +19,7 @@ login_check();
     <title>データ登録</title>
 </head>
 <body>
+<button><a href="/gs_code/02_homework/kadai09_auth_20231223/tramp/index-tramp.html">trampで遊ぶ</a></button>
     <button><a href="select.php">データベースを確認する</a></button>
     <form method="post" action="insert.php">
         <fieldset>

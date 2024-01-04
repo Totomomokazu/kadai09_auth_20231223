@@ -79,6 +79,7 @@ if ($status==false) {
     <title>アンケート結果の表示</title>
 </head>
 <body>
+    <button><a href="/gs_code/02_homework/kadai09_auth_20231223/tramp/index-tramp.html">trampで遊ぶ</a></button>
     <button><a href="index.php">入力画面を確認する</a></button>
     <a class="navbar-brand" href="logout.php">ログアウト</a>
     <!-- データ表示エリア -->
